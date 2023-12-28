@@ -5,7 +5,20 @@ Using kaggle api in google colab using colab secrets
 Introduction
 ------------
 
-empty
+Kaggle is one of the biggest platforms for
+data science and machine learning enthusiasts.
+It contains a huge number of datasets and a variety
+of competitions. Some times you need to access those
+datasets in your
+`Google colab <https://colab.research.google.com>`_.
+
+In this tutorial, I'm about to show you one of the
+ways that you can use **Kaggle cli** to get a dataset
+from
+`Kaggle <https://www.kaggle.com/>`_
+to your
+`Google colab <https://colab.research.google.com>`_,
+using **colab secrets**.
 
 Kaggle account
 ------------------------
@@ -121,9 +134,3 @@ we can simply follow these steps:
 
 After doing these steps, you can see the zip file of
 the dataset, in the **files**.
-
-
-Conclusion
------------
-
-empty
