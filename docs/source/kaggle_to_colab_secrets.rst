@@ -129,7 +129,7 @@ we can simply follow these steps:
 * Click on **Copy API command**
 * Create a new cell in
   `Google colab <https://colab.research.google.com>`_.
-* Put an **!** then paste the command after that
+* Put an **!**, then paste the command after that
 * Run the cell
 
 After doing these steps, you can see the zip file of
