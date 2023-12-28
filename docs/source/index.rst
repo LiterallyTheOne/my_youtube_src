@@ -1,4 +1,3 @@
-
 My YouTube source
 ==========================================
 
@@ -8,11 +7,3 @@ My YouTube source
 
    kaggle_to_colab_secrets
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
