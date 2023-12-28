@@ -134,3 +134,16 @@ we can simply follow these steps:
 
 After doing these steps, you can see the zip file of
 the dataset, in the **files**.
+
+Conclusion
+----------
+
+In this tutorial, I tried to show you on how to
+use **Colab secrets** in order to get a **dataset**
+from
+`Kaggle <https://www.kaggle.com/>`_.
+But there is more you can do with
+`Kaggle api <https://github.com/Kaggle/kaggle-api>`_
+that you can find more about it in their
+`Official github project <https://github.com/Kaggle/kaggle-api>`_.
+
