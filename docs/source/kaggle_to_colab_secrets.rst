@@ -1,4 +1,4 @@
-Using kaggle api in google colab using colab secrets
+Using Kaggle API in Google Colab using Colab secrets
 ====================================================
 
 
@@ -8,34 +8,34 @@ Introduction
 Kaggle is one of the biggest platforms for
 data science and machine learning enthusiasts.
 It contains a huge number of datasets and a variety
-of competitions. Some times you need to access those
+of competitions. Sometimes you need to access those
 datasets in your
-`Google colab <https://colab.research.google.com>`_.
+`Google Colab <https://colab.research.google.com>`_.
 
 In this tutorial, I'm about to show you one of the
-ways that you can use **Kaggle cli** to get a dataset
+ways that you can use **Kaggle CLI** to get a dataset
 from
 `Kaggle <https://www.kaggle.com/>`_
 to your
-`Google colab <https://colab.research.google.com>`_,
-using **colab secrets**.
+`Google Colab <https://colab.research.google.com>`_,
+using **Colab secrets**.
 
 Kaggle account
-------------------------
+--------------
 
 If you don't have an account in
 `Kaggle <https://www.kaggle.com/>`_,
 you can simply make an account, by clicking on the
-**register** button on top right of the site.
+**register** button on the top right of the site.
 
-If you already have an account you can login to your
+If you already have an account you can log in to your
 account using **Sign in** at the top right of the site.
 
-Kaggle api token
+Kaggle API token
 ----------------
 
-After you signed in successfully,
-you can get your **Kaggle api token**
+After you sign in successfully,
+you can get your **Kaggle API token**
 by following these steps:
 
 * Go to the `settings <https://www.kaggle.com/settings>`_
@@ -43,30 +43,30 @@ by following these steps:
 * Go to the **API** section
 * Press the **Create New Token** button
 
-Doing the steps above will automatically starts a
-download of a file called **kaggle.json**. We need
-this file in next steps. the content of this file
-looks like this
+Doing the steps above will automatically start
+downloading a file called **kaggle.json**. We need
+this file in the next steps. the content of this file
+looks like this:
 
 .. code-block:: json
 
     {"username":"your_user_name","key":"your_key"}
 
 
-Create new secret in google colab
----------------------------------
+Create a new secret in Google Colab
+-----------------------------------
 
 So, now we are going to create a secret in
-`Google colab <https://colab.research.google.com>`_.
+`Google Colab <https://colab.research.google.com>`_.
 To do so, we should follow these steps:
 
 * Open or create a new notebook
-* Click on the **key** logo on the left side bar
+* Click on the **key** logo on the left sidebar
 * Press **Add new secret**
 * Name the secret whatever you want, I name it
   **Kaggle**
 * Copy all the content of **kaggle.json** that you
-  already got it from the previous step, to the
+  already got it from the previous step to the
   **value** column.
 * Slide the **Notebook access** to give this notebook
   access to this secret
@@ -76,14 +76,14 @@ something like this:
 
 .. image:: ../figures/google_secrets_kaggle.png
 
-Prepare required file for using Kaggle cli
-------------------------------------------
+Prepare the required file for using Kaggle CLI
+----------------------------------------------
 
-In order to be able to use **Kaggle cli**,
+To be able to use **Kaggle CLI**,
 we have to have a file in ``/root/.kaggle/kaggle.json``
 with the content of our **secret** that we already made.
 
-At first we should get the **value** of our **secret**,
+At first, we should get the **value** of our **secret**,
 using the code below:
 
 .. code-block:: python
@@ -115,7 +115,7 @@ permission of that file to *600*.
 
     ! chmod 600 /root/.kaggle/kaggle.json
 
-Now we are ready to use **kaggle cli**.
+Now we are ready to use **Kaggle CLI**.
 
 Download a dataset
 ------------------
@@ -125,10 +125,10 @@ To download a dataset from
 we can simply follow these steps:
 
 * Go to the dataset that you want to download
-* Press the three dots on top right of the page
+* Press the three dots on the top right of the page
 * Click on **Copy API command**
 * Create a new cell in
-  `Google colab <https://colab.research.google.com>`_.
+  `Google Colab <https://colab.research.google.com>`_.
 * Put an **!**, then paste the command after that
 * Run the cell
 
@@ -138,12 +138,12 @@ the dataset, in the **files**.
 Conclusion
 ----------
 
-In this tutorial, I tried to show you on how to
-use **Colab secrets** in order to get a **dataset**
+In this tutorial, I showed you how to
+use **Colab secrets** to get a **dataset**
 from
 `Kaggle <https://www.kaggle.com/>`_.
 But there is more you can do with
-`Kaggle api <https://github.com/Kaggle/kaggle-api>`_
-that you can find more about it in their
-`Official github project <https://github.com/Kaggle/kaggle-api>`_.
+`Kaggle API <https://github.com/Kaggle/kaggle-api>`_
+that you can find out more about in their
+`Official GitHub project <https://github.com/Kaggle/kaggle-api>`_.
 
